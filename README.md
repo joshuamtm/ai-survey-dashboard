@@ -1,46 +1,125 @@
-# Getting Started with Create React App
+# AI Survey Dashboard 📊
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive web application for visualizing and analyzing organizational AI adoption patterns, based on survey data from the Walton Family Foundation (August 2025).
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+[View Live Dashboard](https://ai-survey-dashboard.netlify.app) (Deployment pending)
 
-### `npm start`
+## 📈 Key Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Interactive Visualizations**: 6 comprehensive charts showing AI tool adoption, usage frequency, and organizational patterns
+- **Data-Driven Insights**: Analysis of 25 survey responses revealing critical trends in AI adoption
+- **Strategic Recommendations**: Actionable 30-day, 90-day, and long-term initiatives
+- **Responsive Design**: Fully mobile-optimized with smooth animations
+- **Real-time Analytics**: Dynamic data visualization using Recharts
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🔍 Key Findings
 
-### `npm test`
+- **633% Growth** in survey participation over 4 days
+- **70.5%** ChatGPT dominance in AI tool usage
+- **92%** of employees actively using AI tools
+- **Environmental Impact** as the top organizational concern
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Technology Stack
 
-### `npm run build`
+- **Frontend**: React 18 with TypeScript
+- **Visualization**: Recharts for data visualization
+- **Animation**: Framer Motion for smooth interactions
+- **Styling**: Custom CSS with responsive design
+- **Icons**: Lucide React icons
+- **Deployment**: Netlify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📦 Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+```bash
+git clone https://github.com/joshuamtm/ai-survey-dashboard.git
+cd ai-survey-dashboard
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+```bash
+npm install
+```
 
-### `npm run eject`
+3. Start the development server:
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Build for production:
+```bash
+npm run build
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 📊 Data Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The dashboard analyzes survey data across multiple dimensions:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **AI Tool Adoption**: Usage statistics for ChatGPT, Claude, Gemini, Copilot, and Perplexity
+- **Usage Frequency**: Distribution from never to multiple times daily
+- **Use Cases**: Research, communication, content creation, meeting support, learning, and documentation
+- **Confidence Levels**: User confidence distribution with AI tools
+- **Concerns**: Environmental impact, security risks, and community effects
 
-## Learn More
+## 🎯 Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+ai-survey-dashboard/
+├── src/
+│   ├── components/
+│   │   ├── Header.tsx           # Hero section with key metrics
+│   │   ├── Dashboard.tsx        # Interactive charts and visualizations
+│   │   ├── InsightsSection.tsx  # Key findings and analysis
+│   │   ├── RecommendationsSection.tsx  # Strategic recommendations
+│   │   └── Footer.tsx          # Footer with resources
+│   ├── App.tsx                 # Main application component
+│   └── App.css                 # Global styles
+├── public/
+├── package.json
+└── netlify.toml               # Netlify deployment configuration
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Deployment
+
+The application is configured for easy deployment on Netlify:
+
+1. Push to GitHub
+2. Connect repository to Netlify
+3. Deploy with automatic builds
+
+Or deploy manually:
+```bash
+npm run build
+npx netlify deploy --prod --dir=build
+```
+
+## 📈 Future Enhancements
+
+- [ ] Real-time data integration via API
+- [ ] Downloadable PDF reports
+- [ ] Advanced filtering and sorting options
+- [ ] Comparative analysis across time periods
+- [ ] Integration with organizational databases
+- [ ] Custom visualization builder
+
+## 📝 Data Privacy
+
+All survey data has been anonymized and aggregated. No personally identifiable information is displayed or stored.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 👥 Contact
+
+For questions about the survey analysis or dashboard, please open an issue on GitHub.
+
+---
+
+**Built with data analysis and visualization expertise** | Powered by React & TypeScript
