@@ -1,0 +1,251 @@
+.recommendations-section {
+  padding: 2rem 0;
+}
+
+.recommendations-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.recommendations-header h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.recommendations-header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.timeframe-selector {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.timeframe-selector button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  background: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.timeframe-selector button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.timeframe-selector button.active {
+  background: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations-content {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+  margin-bottom: 2rem;
+}
+
+.timeframe-header {
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeframe-header h3 {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+.timeframe-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.recommendations-list {
+  padding: 2rem;
+}
+
+.recommendation-card {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.recommendation-card:hover {
+  background: #e9ecef;
+  transform: translateX(5px);
+}
+
+.rec-number {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.rec-content {
+  flex-grow: 1;
+}
+
+.rec-content h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.rec-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.rec-arrow {
+  color: #999;
+  flex-shrink: 0;
+}
+
+.implementation-guide {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.implementation-guide h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.priority-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.priority-item {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+}
+
+.priority-item.high {
+  border-left: 4px solid #e74c3c;
+}
+
+.priority-item.medium {
+  border-left: 4px solid #f39c12;
+}
+
+.priority-item.low {
+  border-left: 4px solid #27ae60;
+}
+
+.priority-label {
+  display: block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.priority-item.high .priority-label {
+  color: #e74c3c;
+}
+
+.priority-item.medium .priority-label {
+  color: #f39c12;
+}
+
+.priority-item.low .priority-label {
+  color: #27ae60;
+}
+
+.priority-item p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.cta-section h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+
+.cta-button {
+  background: white;
+  color: #667eea;
+  border: none;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .timeframe-selector {
+    flex-direction: column;
+  }
+  
+  .recommendation-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .priority-grid {
+    grid-template-columns: 1fr;
+  }
+}
