@@ -50,19 +50,19 @@ const Header: React.FC<HeaderProps> = ({ scrollY }) => {
           transition={{ delay: 0.6, duration: 0.8 }}
         >
           <div className="stat-card">
-            <TrendingUp className="stat-icon" />
-            <div className="stat-value">633%</div>
-            <div className="stat-label">Engagement Growth</div>
-          </div>
-          <div className="stat-card">
             <Users className="stat-icon" />
             <div className="stat-value">92%</div>
             <div className="stat-label">Active AI Users</div>
           </div>
           <div className="stat-card">
+            <TrendingUp className="stat-icon" />
+            <div className="stat-value">35%</div>
+            <div className="stat-label">Daily Usage</div>
+          </div>
+          <div className="stat-card">
             <Brain className="stat-icon" />
-            <div className="stat-value">70.5%</div>
-            <div className="stat-label">ChatGPT Dominance</div>
+            <div className="stat-value">27%</div>
+            <div className="stat-label">Growth Opportunity</div>
           </div>
         </motion.div>
 

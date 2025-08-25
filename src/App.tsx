@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Header from './components/Header';
-import Dashboard from './components/Dashboard';
 import InsightsSection from './components/InsightsSection';
 import RecommendationsSection from './components/RecommendationsSection';
 import Footer from './components/Footer';
 import './App.css';
 
 const App: React.FC = () => {
-  const [activeSection, setActiveSection] = useState<'dashboard' | 'insights' | 'recommendations'>('dashboard');
+  const [activeSection, setActiveSection] = useState<'insights' | 'recommendations'>('insights');
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -23,12 +22,6 @@ const App: React.FC = () => {
       
       <nav className="sticky-nav">
         <div className="nav-container">
-          <button
-            className={activeSection === 'dashboard' ? 'active' : ''}
-            onClick={() => setActiveSection('dashboard')}
-          >
-            Dashboard
-          </button>
           <button
             className={activeSection === 'insights' ? 'active' : ''}
             onClick={() => setActiveSection('insights')}
@@ -49,7 +42,6 @@ const App: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        {activeSection === 'dashboard' && <Dashboard />}
         {activeSection === 'insights' && <InsightsSection />}
         {activeSection === 'recommendations' && <RecommendationsSection />}
       </motion.main>

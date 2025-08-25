@@ -6,55 +6,55 @@ import './InsightsSection.css';
 const InsightsSection: React.FC = () => {
   const insights = [
     {
-      icon: <TrendingUp />,
-      title: "Explosive Growth in AI Engagement",
-      description: "633% surge in survey participation over 4 days signals urgent employee demand for AI guidance and training.",
-      highlight: "633% growth",
-      color: "#2E86AB"
-    },
-    {
-      icon: <Brain />,
-      title: "ChatGPT Becomes the Standard",
-      description: "With 70.5% of all AI tool mentions, ChatGPT has emerged as the de facto platform, simplifying training needs.",
-      highlight: "70.5% dominance",
-      color: "#A23B72"
-    },
-    {
       icon: <Users />,
       title: "Near-Universal Adoption",
       description: "92% of employees use AI at least occasionally, with 35% integrating it into daily workflows.",
       highlight: "92% adoption",
-      color: "#F18F01"
+      color: "#2E86AB"
     },
     {
       icon: <Globe />,
       title: "Environmental Concerns Lead",
       description: "Sustainability worries mentioned 2x more than security, showing sophisticated understanding of AI's hidden costs.",
       highlight: "Top concern",
-      color: "#C73E1D"
+      color: "#A23B72"
     },
     {
       icon: <Shield />,
       title: "Confidence Gap Opportunity",
       description: "63.5% feel confident, but 27% remain slightly confident—targeted training could rapidly elevate this group.",
       highlight: "27% opportunity",
-      color: "#6A994E"
+      color: "#F18F01"
     },
     {
       icon: <BookOpen />,
       title: "Advanced Training Demand",
       description: "Employees seek custom GPT creation and AI agent development, moving beyond basic usage to AI creation.",
       highlight: "Next evolution",
+      color: "#6A994E"
+    },
+    {
+      icon: <TrendingUp />,
+      title: "Research & Analysis Leads Usage",
+      description: "Research and analysis dominates with 54 references, followed by email/communication at 41 mentions.",
+      highlight: "Top use case",
       color: "#BC4B51"
+    },
+    {
+      icon: <Brain />,
+      title: "Daily Power Users Emerging",
+      description: "35% of users engage with AI daily or multiple times per day, forming a core group of power users.",
+      highlight: "35% daily",
+      color: "#C73E1D"
     }
   ];
 
   const keyFindings = [
     "Research & Analysis leads use cases with 54 references",
     "Email & Communication follows closely with 41 mentions",
-    "Daily usage increased from 3 to 22 responses in 4 days",
     "Environmental impact concerns outweigh security 2:1",
-    "Custom GPT development is the top training request"
+    "Custom GPT development is the top training request",
+    "27% of users are 'slightly confident' - prime for training"
   ];
 
   return (
@@ -122,11 +122,11 @@ const InsightsSection: React.FC = () => {
       >
         <h3>The Bottom Line</h3>
         <p>
-          Your organization stands at a critical juncture. Employees have moved beyond questioning 
+          Your organization stands at a critical juncture. With 92% adoption but significant 
+          confidence gaps and environmental concerns, employees have moved beyond questioning 
           whether to use AI to actively seeking guidance on how to use it effectively, ethically, 
-          and sustainably. The 633% surge in engagement isn't just a statistic—it's a clear signal 
-          that your workforce is ready for comprehensive AI transformation, but needs leadership 
-          and structure to succeed.
+          and sustainably. The workforce is ready for comprehensive AI transformation, but needs 
+          targeted training and clear ethical frameworks to succeed.
         </p>
       </motion.div>
     </div>
