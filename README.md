@@ -4,7 +4,7 @@ An interactive web application for visualizing and analyzing organizational AI a
 
 ## 🚀 Live Demo
 
-[View Live Dashboard](https://ai-survey-dashboard.netlify.app) (Deployment pending)
+[View Live Dashboard](https://ai-survey-dashboard-wff.netlify.app)
 
 ## 📈 Key Features
 
