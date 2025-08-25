@@ -1,125 +1,55 @@
-# AI Survey Dashboard 📊
+# AI Survey Dashboard
 
-An interactive web application for visualizing and analyzing organizational AI adoption patterns, based on survey data from the Walton Family Foundation (August 2025).
+An interactive web application visualizing organizational AI adoption patterns from the Walton Family Foundation survey (August 2025).
 
-## 🚀 Live Demo
+## 🚀 Key Insights
 
-[View Live Dashboard](https://ai-survey-dashboard-wff.netlify.app)
+- **96%** of respondents use ChatGPT in daily work
+- **633%** growth in survey participation
+- **68%** access AI tools daily or multiple times daily
+- Significant confidence gap despite high usage
 
-## 📈 Key Features
+## 📊 Features
 
-- **Interactive Visualizations**: 6 comprehensive charts showing AI tool adoption, usage frequency, and organizational patterns
-- **Data-Driven Insights**: Analysis of 25 survey responses revealing critical trends in AI adoption
-- **Strategic Recommendations**: Actionable 30-day, 90-day, and long-term initiatives
-- **Responsive Design**: Fully mobile-optimized with smooth animations
-- **Real-time Analytics**: Dynamic data visualization using Recharts
+- Interactive data visualizations using Chart.js
+- Responsive design for all devices
+- Smooth scrolling navigation
+- Downloadable report functionality
+- Modern, gradient-based UI
 
-## 🔍 Key Findings
+## 🛠️ Technologies
 
-- **633% Growth** in survey participation over 4 days
-- **70.5%** ChatGPT dominance in AI tool usage
-- **92%** of employees actively using AI tools
-- **Environmental Impact** as the top organizational concern
+- HTML5
+- CSS3 (Custom properties, Grid, Flexbox)
+- JavaScript (ES6+)
+- Chart.js for data visualization
+- Google Fonts (Inter)
 
-## 🛠️ Technology Stack
-
-- **Frontend**: React 18 with TypeScript
-- **Visualization**: Recharts for data visualization
-- **Animation**: Framer Motion for smooth interactions
-- **Styling**: Custom CSS with responsive design
-- **Icons**: Lucide React icons
-- **Deployment**: Netlify
-
-## 📦 Installation
-
-1. Clone the repository:
-```bash
-git clone https://github.com/joshuamtm/ai-survey-dashboard.git
-cd ai-survey-dashboard
-```
-
-2. Install dependencies:
-```bash
-npm install
-```
-
-3. Start the development server:
-```bash
-npm start
-```
-
-4. Build for production:
-```bash
-npm run build
-```
-
-## 📊 Data Structure
-
-The dashboard analyzes survey data across multiple dimensions:
-
-- **AI Tool Adoption**: Usage statistics for ChatGPT, Claude, Gemini, Copilot, and Perplexity
-- **Usage Frequency**: Distribution from never to multiple times daily
-- **Use Cases**: Research, communication, content creation, meeting support, learning, and documentation
-- **Confidence Levels**: User confidence distribution with AI tools
-- **Concerns**: Environmental impact, security risks, and community effects
-
-## 🎯 Project Structure
+## 📁 Project Structure
 
 ```
 ai-survey-dashboard/
-├── src/
-│   ├── components/
-│   │   ├── Header.tsx           # Hero section with key metrics
-│   │   ├── Dashboard.tsx        # Interactive charts and visualizations
-│   │   ├── InsightsSection.tsx  # Key findings and analysis
-│   │   ├── RecommendationsSection.tsx  # Strategic recommendations
-│   │   └── Footer.tsx          # Footer with resources
-│   ├── App.tsx                 # Main application component
-│   └── App.css                 # Global styles
-├── public/
-├── package.json
-└── netlify.toml               # Netlify deployment configuration
+├── index.html          # Main HTML file
+├── styles.css          # Custom styles
+├── script.js           # Interactive functionality
+├── survey-insights.png # Data visualization
+└── README.md          # Documentation
 ```
 
-## 🚀 Deployment
+## 🌐 Live Demo
 
-The application is configured for easy deployment on Netlify:
+Visit the live dashboard at: [AI Survey Dashboard](https://ai-survey-dashboard.netlify.app)
 
-1. Push to GitHub
-2. Connect repository to Netlify
-3. Deploy with automatic builds
+## 📈 Data Source
 
-Or deploy manually:
-```bash
-npm run build
-npx netlify deploy --prod --dir=build
-```
+Based on the Walton Family Foundation's Organizational AI Usage and Needs Survey conducted August 21-25, 2025.
 
-## 📈 Future Enhancements
+## 🔧 Local Development
 
-- [ ] Real-time data integration via API
-- [ ] Downloadable PDF reports
-- [ ] Advanced filtering and sorting options
-- [ ] Comparative analysis across time periods
-- [ ] Integration with organizational databases
-- [ ] Custom visualization builder
+1. Clone the repository
+2. Open `index.html` in your browser
+3. No build process required - pure HTML/CSS/JS
 
-## 📝 Data Privacy
+## 📝 License
 
-All survey data has been anonymized and aggregated. No personally identifiable information is displayed or stored.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is open source and available under the MIT License.
-
-## 👥 Contact
-
-For questions about the survey analysis or dashboard, please open an issue on GitHub.
-
----
-
-**Built with data analysis and visualization expertise** | Powered by React & TypeScript
+© 2025 Walton Family Foundation - AI Usage Survey Analysis

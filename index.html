@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Adoption Dashboard - Organizational Survey Insights</title>
+    <meta name="description" content="Interactive dashboard visualizing organizational AI adoption patterns from the Walton Family Foundation survey">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-badge">AI Survey Analysis 2025</div>
+            <h1 class="hero-title">96% of Organizations Now Use ChatGPT Daily</h1>
+            <p class="hero-subtitle">Comprehensive insights from the Walton Family Foundation's organizational AI usage survey reveal a dramatic workplace transformation</p>
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Respondents</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">633%</div>
+                    <div class="stat-label">Growth Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">96%</div>
+                    <div class="stat-label">Adoption Rate</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M19 12l-7 7-7-7"/>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav-sticky">
+        <div class="nav-container">
+            <div class="nav-brand">AI Dashboard</div>
+            <div class="nav-links">
+                <a href="#overview" class="nav-link">Overview</a>
+                <a href="#usage" class="nav-link">Usage Patterns</a>
+                <a href="#confidence" class="nav-link">Confidence</a>
+                <a href="#tools" class="nav-link">Tools</a>
+                <a href="#insights" class="nav-link">Insights</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        
+        <!-- Overview Section -->
+        <section id="overview" class="section">
+            <div class="container">
+                <h2 class="section-title">Executive Summary</h2>
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="summary-icon">📊</div>
+                        <h3>Unprecedented Adoption</h3>
+                        <p>96% of survey respondents actively use ChatGPT in their daily work, marking a complete shift in workplace technology adoption patterns.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">🚀</div>
+                        <h3>Rapid Growth</h3>
+                        <p>Survey participation grew 633% between sessions, reflecting urgent organizational interest in understanding and optimizing AI usage.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">🎯</div>
+                        <h3>Strategic Selection</h3>
+                        <p>Organizations show thoughtful AI tool adoption, choosing solutions that deliver immediate value rather than wholesale implementation.</p>
+                    </div>
+                    <div class="summary-card">
+                        <div class="summary-icon">📚</div>
+                        <h3>Training Gap</h3>
+                        <p>Despite high usage, confidence levels remain moderate, suggesting massive untapped potential through proper training and support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Usage Patterns Section -->
+        <section id="usage" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">ChatGPT Usage Frequency</h2>
+                <div class="chart-container">
+                    <canvas id="usageChart"></canvas>
+                </div>
+                <div class="insight-box">
+                    <h3>Key Insight</h3>
+                    <p>68% of users access ChatGPT daily or multiple times per day, indicating AI has become essential infrastructure rather than experimental technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Confidence Levels Section -->
+        <section id="confidence" class="section">
+            <div class="container">
+                <h2 class="section-title">AI Confidence Levels</h2>
+                <div class="charts-row">
+                    <div class="chart-half">
+                        <canvas id="confidenceChart"></canvas>
+                    </div>
+                    <div class="chart-half">
+                        <div class="confidence-insights">
+                            <h3>The Confidence Paradox</h3>
+                            <p>High usage paired with moderate confidence creates an unusual dynamic. Unlike traditional tools where usage drives confidence, AI reveals its complexity as users engage more deeply.</p>
+                            <div class="confidence-levels">
+                                <div class="level-item">
+                                    <span class="level-dot" style="background: #FF6B6B;"></span>
+                                    <span>Not Confident: 15%</span>
+                                </div>
+                                <div class="level-item">
+                                    <span class="level-dot" style="background: #4ECDC4;"></span>
+                                    <span>Slightly: 25%</span>
+                                </div>
+                                <div class="level-item">
+                                    <span class="level-dot" style="background: #45B7D1;"></span>
+                                    <span>Moderately: 35%</span>
+                                </div>
+                                <div class="level-item">
+                                    <span class="level-dot" style="background: #96CEB4;"></span>
+                                    <span>Very: 20%</span>
+                                </div>
+                                <div class="level-item">
+                                    <span class="level-dot" style="background: #FFEAA7;"></span>
+                                    <span>Extremely: 5%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Adoption Section -->
+        <section id="tools" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">AI Tools Ecosystem</h2>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <h3>ChatGPT</h3>
+                        <div class="tool-stat">96%</div>
+                        <div class="tool-label">Adoption Rate</div>
+                        <div class="tool-bar">
+                            <div class="tool-fill" style="width: 96%;"></div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Zoom AI Notetaker</h3>
+                        <div class="tool-stat">Mixed</div>
+                        <div class="tool-label">Adoption Rate</div>
+                        <div class="tool-bar">
+                            <div class="tool-fill" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                    <div class="tool-card">
+                        <h3>Other AI Tools</h3>
+                        <div class="tool-stat">Varied</div>
+                        <div class="tool-label">Exploration Phase</div>
+                        <div class="tool-bar">
+                            <div class="tool-fill" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <canvas id="participationChart" style="margin-top: 3rem;"></canvas>
+            </div>
+        </section>
+
+        <!-- Key Insights Section -->
+        <section id="insights" class="section">
+            <div class="container">
+                <h2 class="section-title">Key Insights & Recommendations</h2>
+                
+                <div class="insights-timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker">1</div>
+                        <div class="timeline-content">
+                            <h3>Immediate Actions Required</h3>
+                            <ul>
+                                <li>Develop comprehensive AI policies addressing usage, security, and ethics</li>
+                                <li>Invest in systematic training programs to close the confidence gap</li>
+                                <li>Audit existing workflows for AI integration opportunities</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">2</div>
+                        <div class="timeline-content">
+                            <h3>Top Training Priorities</h3>
+                            <ul>
+                                <li>Advanced prompt engineering techniques</li>
+                                <li>Integration with existing workflows</li>
+                                <li>Data security and privacy best practices</li>
+                                <li>Use case identification and implementation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker">3</div>
+                        <div class="timeline-content">
+                            <h3>Strategic Considerations</h3>
+                            <ul>
+                                <li>AI literacy becoming as fundamental as computer literacy</li>
+                                <li>Competitive advantage shifting to best AI leveragers</li>
+                                <li>Job roles evolving to incorporate AI collaboration</li>
+                                <li>New governance structures needed for AI oversight</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <h3>The Path Forward</h3>
+                    <p>The survey data makes one thing crystal clear: <strong>The AI revolution isn't coming—it's here.</strong> Organizations must now shift focus from adoption to optimization, from experimentation to excellence.</p>
+                    <button class="cta-button" onclick="downloadReport()">Download Full Report</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Methodology</h2>
+                <div class="methodology-grid">
+                    <div class="method-card">
+                        <h4>Survey Design</h4>
+                        <p>Multi-session approach capturing temporal dynamics with mixed quantitative and qualitative responses</p>
+                    </div>
+                    <div class="method-card">
+                        <h4>Data Collection</h4>
+                        <p>August 21-25, 2025<br>25 unique respondents<br>2 survey sessions</p>
+                    </div>
+                    <div class="method-card">
+                        <h4>Analysis Approach</h4>
+                        <p>Statistical examination combined with journalistic interpretation for actionable insights</p>
+                    </div>
+                    <div class="method-card">
+                        <h4>Completion Rate</h4>
+                        <p>Average: 19.7%<br>Session 1: 1.7%<br>Session 2: 37.7%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Walton Family Foundation - AI Usage Survey Analysis</p>
+            <p>Data Analysis Period: August 21-25, 2025 | Built with Chart.js</p>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

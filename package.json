@@ -43,5 +43,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "An interactive web application for visualizing and analyzing organizational AI adoption patterns, based on survey data from the Walton Family Foundation (August 2025).",
+  "main": "index.js",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuamtm/ai-survey-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/joshuamtm/ai-survey-dashboard/issues"
+  },
+  "homepage": "https://github.com/joshuamtm/ai-survey-dashboard#readme"
 }
