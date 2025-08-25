@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Mail, FileText } from 'lucide-react';
+import { Github, Mail, FileText, Download } from 'lucide-react';
 import './Footer.css';
 
 const Footer: React.FC = () => {
@@ -18,24 +18,38 @@ const Footer: React.FC = () => {
           <h4>Methodology</h4>
           <p>
             Text mining, statistical analysis, and sentiment analysis of 25 survey 
-            responses across multiple sessions.
+            responses from a single organizational session.
           </p>
         </div>
         
         <div className="footer-section">
           <h4>Resources</h4>
           <div className="footer-links">
-            <a href="#" className="footer-link">
-              <FileText size={16} />
-              <span>Full Report</span>
+            <a 
+              href="https://docs.google.com/spreadsheets/d/10f_DaylopYw6aIw_rCJwIXibBJlxmH9R/edit?usp=sharing&ouid=116902632127531067550&rtpof=true&sd=true" 
+              className="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Download size={16} />
+              <span>Download Raw Data</span>
             </a>
-            <a href="#" className="footer-link">
+            <a 
+              href="https://github.com/joshuamtm/ai-survey-dashboard" 
+              className="footer-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Github size={16} />
               <span>Source Code</span>
             </a>
-            <a href="#" className="footer-link">
-              <Mail size={16} />
-              <span>Contact</span>
+            <a 
+              href="/ai_survey_data_journalism_report.md" 
+              className="footer-link"
+              download
+            >
+              <FileText size={16} />
+              <span>Full Report</span>
             </a>
           </div>
         </div>

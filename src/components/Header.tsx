@@ -72,7 +72,7 @@ const Header: React.FC<HeaderProps> = ({ scrollY }) => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
         >
-          Survey Period: August 21-25, 2025
+          Survey Date: August 2025
         </motion.div>
       </motion.div>
     </header>
